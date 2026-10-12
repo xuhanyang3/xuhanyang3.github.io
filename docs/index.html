@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>徐晗洋 Hanyang Xu · 浙江大学 · 人工智能</title>
+  <meta name="description" content="徐晗洋，浙江大学人工智能硕士研究生。研究多模态大模型、医学视觉语言学习与基础模型知识融合。论文、项目与个人简历。">
+  <link rel="canonical" href="https://xuhanyang3.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:title" content="徐晗洋 Hanyang Xu · 人工智能研究">
+  <meta property="og:description" content="浙江大学人工智能硕士研究生 · 多模态大模型、医学视觉语言学习与知识融合。">
+  <meta property="og:url" content="https://xuhanyang3.github.io/">
+  <meta property="og:image" content="https://xuhanyang3.github.io/assets/portrait.jpg">
+  <meta name="theme-color" content="#193f3a">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#about" aria-label="徐晗洋，返回介绍">HX<span class="wordmark-dot">.</span></a>
+      <nav aria-label="主导航">
+        <a href="#research">论文</a>
+        <a href="#projects">项目</a>
+        <a href="#education">教育</a>
+        <a href="#skills">技能</a>
+        <a href="#contact">联系 <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section id="about" class="hero" aria-labelledby="name">
+      <div class="hero-copy">
+        <p class="eyebrow">ZHEJIANG UNIVERSITY · ARTIFICIAL INTELLIGENCE</p>
+        <h1 id="name">徐晗洋<span class="english-name" lang="en">Hanyang Xu</span></h1>
+        <p class="hero-role">人工智能硕士研究生 <span class="role-divider" aria-hidden="true">/</span> 浙江大学</p>
+        <p class="hero-intro">我关注多模态大模型与医学人工智能，研究视觉与语言的领域适配、视觉证据对齐，以及基础模型与专家模型的知识融合。</p>
+        <p class="hero-detail">目前在浙江大学攻读人工智能硕士，导师为吴健教授，预计 2028 年毕业。本科毕业于电子科技大学人工智能专业。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="assets/Hanyang-Xu-CV.pdf" download="徐晗洋-浙江大学-人工智能-简历.pdf">下载简历 <span aria-hidden="true">↓</span></a>
+          <a class="button secondary" href="mailto:hanyangxucs@gmail.com">邮件联系 <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="https://github.com/xuhanyang3" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="availability"><span class="status-dot" aria-hidden="true"></span> 寻找 AI 算法实习 · 可随时到岗、全职实习六个月以上</p>
+      </div>
+      <figure class="portrait-block">
+        <div class="portrait-frame"><img src="assets/portrait.jpg" width="1280" height="1280" alt="徐晗洋的个人照片" fetchpriority="high"></div>
+        <figcaption><span>杭州 · 中国</span><span lang="en">HANGZHOU, CN</span></figcaption>
+      </figure>
+    </section>
+
+    <div class="research-interests" aria-label="研究兴趣">
+      <span class="interest-label">研究兴趣</span>
+      <span>多模态大模型</span><span>医学视觉语言学习</span><span>参数高效微调</span><span>知识融合与泛化</span>
+    </div>
+
+    <section id="research" class="section" aria-labelledby="research-heading">
+      <div class="section-heading">
+        <div><p class="eyebrow">SELECTED RESEARCH</p><h2 id="research-heading">论文与研究</h2></div>
+        <p class="section-aside">从诊断性能，到模型使用的视觉证据。</p>
+      </div>
+
+      <article class="research-entry" aria-labelledby="adapuv-title">
+        <div class="entry-index" aria-hidden="true">01</div>
+        <div class="entry-body">
+          <div class="publication-meta"><span class="venue">npj Digital Medicine</span><span class="badge pending">小修已修回</span><span class="authorship">第一作者</span></div>
+          <h3 id="adapuv-title" lang="en">Expert-Comparable and Modality-Flexible Vision-Language Diagnosis of Non-Infectious Posterior Uveitis</h3>
+          <p class="entry-subtitle">AdaPUV · 面向非感染性后葡萄膜炎的多模态诊断</p>
+          <p class="entry-description">融合多源眼科影像与临床文本，基于 Qwen3-VL-8B-Instruct 进行 LoRA 参数高效微调。通过跨模态迁移、模态缺失、文本消融及数据效率实验，评估领域适配与缺失模态鲁棒性。</p>
+          <p class="contribution"><span>我的工作</span>主导数据集构建、实验设计、代码实现与论文撰写。</p>
+          <div class="results" aria-label="内部测试结果">
+            <div><strong>96.28<span>%</span></strong><span class="metric-label">内部测试准确率</span></div>
+            <div><strong>0.9893</strong><span class="metric-label">内部测试 AUROC</span></div>
+            <p class="result-note">图文数据构建<br>全流程实验与评估</p>
+          </div>
+          <ul class="tags" aria-label="技术关键词"><li>Vision–Language</li><li>Qwen3-VL</li><li>LoRA</li><li>医学多模态</li></ul>
+        </div>
+      </article>
+
+      <article class="research-entry" aria-labelledby="beyond-title">
+        <div class="entry-index" aria-hidden="true">02</div>
+        <div class="entry-body">
+          <div class="publication-meta"><span class="venue">BMVC 2026</span><span class="badge accepted">Accepted</span><span class="authorship">共同第一作者 · 排名第二</span></div>
+          <h3 id="beyond-title" lang="en">Beyond Classification: Structured Supervision Aligns Visual Evidence with Medical Semantics</h3>
+          <p class="entry-subtitle">超越分类准确率：结构化监督与病灶视觉证据对齐</p>
+          <p class="entry-description">在三个医学图像数据集上，研究分类性能与视觉证据定位是否一致。对比图自监督、分类与分割联合训练、图文对齐三种监督路线，分析视觉模型的背景捷径与空间对齐问题。</p>
+          <p class="contribution"><span>我的工作</span>参与实验设计、代码实现与论文撰写。</p>
+          <div class="results" aria-label="平均 PIB 对比">
+            <div><strong>41.0<span>%</span></strong><span class="metric-label">BiomedCLIP 微调 · 平均 PIB</span></div>
+            <div><strong class="muted-number">16.8<span>%</span></strong><span class="metric-label">普通 ViT · 平均 PIB</span></div>
+            <p class="result-note">PIB：最高响应图像块<br>落入病灶框的比例</p>
+          </div>
+          <div class="paper-links">
+            <a href="https://arxiv.org/abs/2609.05937" target="_blank" rel="noopener noreferrer">论文 / arXiv <span aria-hidden="true">↗</span></a>
+            <a href="https://acenbai.github.io/projects/Beyond-Classification/" target="_blank" rel="noopener noreferrer">项目主页 <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/AcenBai/Beyond-Classification-code" target="_blank" rel="noopener noreferrer">代码 <span aria-hidden="true">↗</span></a>
+          </div>
+          <ul class="tags" aria-label="技术关键词"><li>ViT</li><li>BiomedCLIP</li><li>Structured Supervision</li><li>视觉证据对齐</li></ul>
+        </div>
+      </article>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="section-heading"><div><p class="eyebrow">RESEARCH PROJECT</p><h2 id="projects-heading">项目经历</h2></div><span class="section-aside">通用表征 × 领域知识</span></div>
+      <article class="project-panel" aria-labelledby="fusion-title">
+        <div class="project-main">
+          <p class="project-kicker">KNOWLEDGE FUSION</p>
+          <h3 id="fusion-title">视觉基础模型与专家模型的知识融合</h3>
+          <p>针对基础模型领域适配中的知识遗忘与跨域泛化问题，采用冻结预训练骨干、训练轻量适配模块的方案，整合基础模型的通用表征与专家模型的领域知识。</p>
+          <p class="contribution"><span>我的工作</span>参与模型实现、实验设计、泛化评估与结果整理。</p>
+        </div>
+        <ol class="project-methods" aria-label="项目方法与评估">
+          <li><span class="method-number">01</span><div><h4>特征分解</h4><p>分解结构与残差成分，保留互补信息。</p></div></li>
+          <li><span class="method-number">02</span><div><h4>对齐与融合</h4><p>组件级知识对齐，文本语义引导的多尺度融合。</p></div></li>
+          <li><span class="method-number">03</span><div><h4>泛化评估</h4><p>跨中心、跨模态实验，评估融合效果与知识保留能力。</p></div></li>
+        </ol>
+      </article>
+    </section>
+
+    <section id="education" class="section" aria-labelledby="education-heading">
+      <div class="section-heading"><div><p class="eyebrow">EDUCATION</p><h2 id="education-heading">教育经历</h2></div></div>
+      <div class="education-list">
+        <article class="education-entry">
+          <p class="education-date">2025.09 — 至今</p>
+          <div><h3>浙江大学 <span lang="en">Zhejiang University</span></h3><p class="education-degree">人工智能 · 硕士研究生 · 保研</p><p class="education-detail">预计 2028 年毕业 · 导师：吴健教授 · 研究方向：多模态大模型</p><p class="education-detail">相关课程：深度学习、自然语言处理、计算机视觉</p></div>
+        </article>
+        <article class="education-entry">
+          <p class="education-date">2021.09 — 2025.06</p>
+          <div><h3>电子科技大学 <span lang="en">UESTC</span></h3><p class="education-degree">人工智能 · 工学学士</p><p class="education-detail">GPA 3.97 / 4.0 · 专业排名前 5%</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section" aria-labelledby="skills-heading">
+      <div class="skills-column">
+        <p class="eyebrow">TOOLKIT</p><h2 id="skills-heading">技能与专长</h2>
+        <dl class="skills-list">
+          <div><dt>编程语言</dt><dd>Python · C / C++</dd></div>
+          <div><dt>深度学习</dt><dd>PyTorch · TensorFlow<br><span>模型构建、训练与部署</span></dd></div>
+          <div><dt>研究实践</dt><dd>多模态数据构建 · LoRA 微调<br><span>实验设计、消融分析与泛化评估</span></dd></div>
+          <div><dt>英语能力</dt><dd>CET-6 · 627 分<br><span>英文技术文献阅读</span></dd></div>
+        </dl>
+      </div>
+      <div class="awards-column">
+        <p class="eyebrow">HONORS</p><h2>荣誉与奖励</h2>
+        <ul class="awards-list">
+          <li><span class="award-year">2023</span><div><h3>全国大学生数学竞赛</h3><p>非数学类 · 省级一等奖</p></div></li>
+          <li><span class="award-year">2022 / 2023</span><div><h3>电子科技大学优秀学生奖学金</h3><p>一等奖 · 连续两年</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <div><p class="eyebrow">LET’S CONNECT</p><h2 id="contact-heading">欢迎交流与联系。</h2><p>关于人工智能算法实习、研究合作，或论文与项目的交流。</p></div>
+      <div class="contact-actions"><a class="contact-email" href="mailto:hanyangxucs@gmail.com">hanyangxucs@gmail.com <span aria-hidden="true">↗</span></a><a class="contact-cv" href="assets/Hanyang-Xu-CV.pdf" download="徐晗洋-浙江大学-人工智能-简历.pdf">下载完整简历 <span aria-hidden="true">↓</span></a></div>
+    </section>
+  </main>
+
+  <footer class="container site-footer"><p>© 2026 徐晗洋 · Hanyang Xu</p><p>内容更新于 2026.10 <span aria-hidden="true">·</span> <a href="#about">回到顶部 ↑</a></p></footer>
+</body>
+</html>
